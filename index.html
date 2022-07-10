@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Procurando refeições...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">Healthy2Home</a>
+
+                <h1><span>A alimentação saudável</span> Que  te encontra</h1>
+
+                <p>Não sabe o que comer e também não quer sair da dieta? Resolvemos isso para você</p>
+
+
+                <div class="form-caixa">
+                    <form action="">
+                        <div class="form-esquerda">
+                            <label for="cidade">Qual a sua cidade?</label>
+                            <input type="text" name="cidade" id="cidade">
+                            <p>Exemplo: "Campinas"</p>
+                        </div>
+
+                        <input type="button" value="Ache seu prato">
+                    </form>
+                </div>
+            </header>
+        
+
+
+        </section>
+    </div>
+
+
+    <section class="saude">
+        <div class="col-dir">
+            <h2>Saudável. E pra você.</h2>
+            <p>Um sistema completamente personalizado de refeições saudáveis e dentro de sua própria dieta. Sem complicações, sem sujeira e sem cansaço</p>
+        </div>
+        <img src="images/photo-1496116218417-1a781b1c416c.avif" alt="Quatro marmitas fit dispostas numa mesa de madeira com  tábua de corte ao funod com alho, pimentão, tomate, uma colher de pu com tempero e um vidro de azeite ">
+    </section>
+
+    <script>
+        let btn= document.getElementById('cta-btn');
+        let overlay= document.getElementById('overlay');
+
+        btn.addEventListener('click', ( ) => {
+            overlay.style.display= 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+
+
+    </script>
+</body>
+</html>
